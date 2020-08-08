@@ -20,7 +20,7 @@ async function run() {
   fs.mkdirSync(configDir, { recursive: true });
 
   const oauthTokenFile = path.join(configDir, "oauth2_refresh_token");
-  const oauthToken = core.getInput("oauth_token");
+  const oauthToken = core.getInput("refresh_token");
   fs.writeFileSync(oauthTokenFile, oauthToken);
 }
 

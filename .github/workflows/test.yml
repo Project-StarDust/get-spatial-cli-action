@@ -15,5 +15,5 @@ jobs:
     - run: npm test
     - uses: ./
       with: 
-        oauth_token: ${{ secrets.SPATIAL_OAUTH_TOKEN }}
+        refresh_token: ${{ secrets.SPATIAL_REFRESH_TOKEN }}
     - run: spatial package get worker_sdk c_headers 14.0.0 ./test

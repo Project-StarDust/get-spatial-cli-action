@@ -20,16 +20,16 @@ jobs:
       - uses: jamiebrynes7/get-spatial-cli-action@v1
         with:
           version: 20190416.094616.a865bb5b54
-          oauth_token: "${OAUTH_TOKEN_SECRET}"
+          refresh_token: "${OAUTH_TOKEN_SECRET}"
       - run: spatial build
 ```
 
 ## Inputs
 
-| Name         | Required | Description                                 | Type   | Default  |
-|--------------|:--------:|---------------------------------------------|--------|----------|
-| `auth_token` |    ✓     | The auth token to use for the Spatial CLI.  | string |          |
-| `version`    |          | The version of the Spatial CLI to download. | string | "latest" |
+| Name            | Required | Description                                 | Type   | Default  |
+|-----------------|:--------:|---------------------------------------------|--------|----------|
+| `refresh_token` |    ✓     | The auth token to use for the Spatial CLI.  | string |          |
+| `version`       |          | The version of the Spatial CLI to download. | string | "latest" |
 
 ## Developing
 
